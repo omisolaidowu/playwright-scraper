@@ -4,10 +4,6 @@
   "scripts": {
     "vercel-build": "echo 'Build complete'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "playwright-core": "^1.50.1",
     "@sparticuz/chromium": "^132.0.0"
