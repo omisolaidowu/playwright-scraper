@@ -18,6 +18,6 @@ module.exports = async (req, res) => {
         res.status(200).json({ title });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: 'Failed to scrape page' });
+        res.status(500).json({ error: error });
     }
 };
