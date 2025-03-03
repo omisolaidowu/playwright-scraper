@@ -23,7 +23,7 @@
 //     }
 // };
 
-const chromium = require('playwright-core');
+const { chromium } = require('playwright-core');
 const chromiumBinary = require('@sparticuz/chromium');
 
 module.exports = async (req, res) => {
@@ -32,10 +32,10 @@ module.exports = async (req, res) => {
         const executablePath = await chromiumBinary.executablePath();
 
         // Launch browser with external Chromium
-        const browser = await chromium.chromium.launch({
+        const browser = await chromium.launch({
             args: chromiumBinary.args,
             executablePath: executablePath || '/usr/bin/chromium', // ✅ Ensure valid path
-            headless: chromiumBinary.headless, // ✅ Use optimized headless mode
+            headless: true, // ✅ Use optimized headless mode
         });
 
         const page = await browser.newPage();
@@ -47,6 +47,6 @@ module.exports = async (req, res) => {
         res.status(200).json({ title });
     } catch (error) {
         console.error('Browser Launch Error:', error);
-        res.status(500).json({ error: 'Failed to scrape page' });
+        res.status(500).json({ error: 'Failed to me scrape page' });
     }
 };
