@@ -22,6 +22,6 @@ module.exports = async (req, res) => {
         res.status(200).json({ title });
     } catch (error) {
         console.error('Browser Launch Error:', error);
-        res.status(500).json({ error: 'Failed to me scrape page' });
+        res.status(500).json({ error: 'Failed to scrape page' });
     }
 };
