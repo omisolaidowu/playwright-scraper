@@ -1,7 +1,7 @@
 {
   "name": "playwright-dep",
   "version": "1.0.0",
-  "main": "api/scraper.js",
+  "main": "scraper.js",
   "scripts": {
     "start": "node scraper.js",
     "test": "echo \"Error: no test specified\" && exit 1"
