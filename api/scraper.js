@@ -1,4 +1,4 @@
-const { chromium } = require('playwright-core');
+const chromium = require('playwright-core');
 const chromiumPath = require('@sparticuz/chromium').executablePath;
 
 module.exports = async (req, res) => {
