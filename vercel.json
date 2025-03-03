@@ -1,9 +1,9 @@
 {
     "routes": [
-      { "src": "scraper", "dest": "scraper.js" }
+      { "src": "/api/scraper", "dest": "/api/scraper.js" }
     ],
     "functions": {
-      "scraper.js": {
+      "api/scraper.js": {
         "runtime": "nodejs18.x",
         "memory": 1024,
         "maxDuration": 10
