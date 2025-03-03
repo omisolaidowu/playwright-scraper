@@ -1,5 +1,4 @@
 {
-    "version": 2,
     "functions": {
     "api/scraper.js": {
       "memory": 1024,
