@@ -1,6 +1,6 @@
 {
     "routes": [
-      { "src": "/api/scraper", "dest": "/api/scraper.js" }
+      { "src": "scraper", "dest": "scraper.js" }
     ],
     "functions": {
       "scraper.js": {

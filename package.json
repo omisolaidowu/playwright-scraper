@@ -1,9 +1,9 @@
 {
   "name": "playwright-dep",
   "version": "1.0.0",
-  "main": "api/scraper.js",
+  "main": "scraper.js",
   "scripts": {
-    "start": "node api/scraper.js",
+    "start": "node scraper.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "playwght-core": "^1.50.1", 
-     "@sparticuz/chromium": "^132.0.0"
+  "playwright-core": "^1.50.1",
+  "@sparticuz/chromium": "^132.0.0"
   }
 }
