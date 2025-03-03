@@ -1,17 +1,15 @@
 {
   "name": "playwright-dep",
   "version": "1.0.0",
-  "main": "scraper.js",
   "scripts": {
-    "start": "node scraper.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "vercel-build": "echo 'Build complete'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-  "playwright-core": "^1.50.1",
-  "@sparticuz/chromium": "^132.0.0"
+    "playwright-core": "^1.50.1",
+    "@sparticuz/chromium": "^132.0.0"
   }
 }
