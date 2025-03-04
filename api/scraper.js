@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
 
         const page = await browser.newPage();
         await page.goto('https://www.scrapingcourse.com/ecommerce/');
-        const title = await page.title();
+        const title = await page.content();
 
         await browser.close();
 
