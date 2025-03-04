@@ -15,11 +15,11 @@ module.exports = async (req, res) => {
 
         const page = await browser.newPage();
         await page.goto('https://www.scrapingcourse.com/ecommerce/');
-        const title = await page.content();
+        const htmlContent = await page.content();
 
         await browser.close();
 
-        res.status(200).json({ title });
+        res.status(200).json({ htmlContent });
     } catch (error) {
         console.error('Browser Launch Error:', error);
         res.status(500).json({ error: 'Failed to scrape page' });
