@@ -26,7 +26,7 @@
 //     }
 // };
 
-const { chromium } = require('playwright');
+const { chromium } = require('playwright-core');
 const connectionURL =
     'wss://browser.zenrows.com?apikey=eb05b1504af794838e9baffae7c0c3300084ef79';
 
