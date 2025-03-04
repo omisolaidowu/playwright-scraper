@@ -1,7 +1,7 @@
 const { chromium } = require('playwright-core');
 const chromiumBinary = require('@sparticuz/chromium');
 
-module.exports = async (req, res) => {
+const scraper = async (req, res) => {
     try {
         // Get correct Chromium path
         const executablePath = await chromiumBinary.executablePath();
@@ -18,6 +18,7 @@ module.exports = async (req, res) => {
         const htmlContent = await page.content();
 
         await browser.close();
+        console.log(htmlContent);
 
         res.status(200).json({ htmlContent });
     } catch (error) {
@@ -25,6 +26,8 @@ module.exports = async (req, res) => {
         res.status(500).json({ error: 'Failed to scrape page' });
     }
 };
+
+module.exports = scraper;
 
 // const { chromium } = require('playwright');
 // const connectionURL =
